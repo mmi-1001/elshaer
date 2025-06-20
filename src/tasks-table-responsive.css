@@ -1,0 +1,53 @@
+@media (max-width: 600px) {
+  .responsive-tasks-table thead,
+  .responsive-projects-table thead {
+    display: none;
+  }
+  .responsive-tasks-table tbody,
+  .responsive-tasks-table tr,
+  .responsive-projects-table tbody,
+  .responsive-projects-table tr {
+    display: block;
+    width: 100%;
+  }
+  .responsive-tasks-table td,
+  .responsive-projects-table td {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    font-size: 1rem;
+  }
+  .responsive-tasks-table td::before,
+  .responsive-projects-table td::before {
+    content: attr(data-label) ": ";
+    font-weight: bold;
+    color: #b0b8c1;
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+  .responsive-projects-table tr {
+    background: #232a36;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 8px 12px;
+  }
+  .responsive-tasks-table tr {
+    background: #232a36;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 8px 12px;
+  }
+}
+
+.css-zxdg2z {
+  padding: 0 !important;
+}
+
+.css-old1by {
+  padding: 24px !important;
+} 
